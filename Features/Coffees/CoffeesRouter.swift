@@ -24,7 +24,7 @@ final class CoffeesRouter: Router {
         guard let route = route as? CoffeesRoute else { return }
         switch route {
         case .list:
-            let coffeeListViewModel = CoffeesListViewModel()
+            let coffeeListViewModel = EntityListViewModel<Coffee>()
             let coffeeListView = CoffeesListView(viewModel: coffeeListViewModel)
             navigationContext.setInitialView(view: coffeeListView)
         case .detail(let coffee):

@@ -13,13 +13,9 @@ class AppCoordinator {
         var tabs: [UIViewController] = []
 
         // Coffee List Tab
-        let coffeeListViewModel = CoffeesListViewModel()
+        let coffeeListViewModel = EntityListViewModel<Coffee>()
         let coffeeListView = CoffeesListView(viewModel: coffeeListViewModel)
-        
         let coffeeNavController = NavigationController()
-        
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))
-
         
         coffeeNavController.setInitialView(view: coffeeListView)
         

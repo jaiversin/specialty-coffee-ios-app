@@ -158,6 +158,21 @@ enum Endpoint {
     }
 }
 
+extension Endpoint {
+    static func listEndpoint(for entity: Any) -> Endpoint? {
+        switch entity.self {
+        case is Coffee.Type:
+            return Endpoint.getCoffees
+        case is Roaster.Type:
+            return Endpoint.getRoasters
+        case is Shop.Type:
+            return Endpoint.getShops
+        default:
+            return nil
+        }
+    }
+}
+
 enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"

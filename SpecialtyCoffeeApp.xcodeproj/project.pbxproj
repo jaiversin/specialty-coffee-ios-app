@@ -43,6 +43,7 @@
 		08FCD22B2DCC1C6B004C8262 /* CoffeeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FCD2292DCC1C6B004C8262 /* CoffeeDetailsView.swift */; };
 		08FCD22C2DCC1C6B004C8262 /* CoffeeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FCD22A2DCC1C6B004C8262 /* CoffeeDetailsViewModel.swift */; };
 		08FCD22F2DCDBB41004C8262 /* Pageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FCD22E2DCDBB41004C8262 /* Pageable.swift */; };
+		08FCD2382DD25E4C004C8262 /* EntityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FCD2372DD25E42004C8262 /* EntityListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		08FCD2292DCC1C6B004C8262 /* CoffeeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailsView.swift; sourceTree = "<group>"; };
 		08FCD22A2DCC1C6B004C8262 /* CoffeeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailsViewModel.swift; sourceTree = "<group>"; };
 		08FCD22E2DCDBB41004C8262 /* Pageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pageable.swift; sourceTree = "<group>"; };
+		08FCD2372DD25E42004C8262 /* EntityListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 		0886117B2DC925C40082A8AB /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				08FCD2362DD25E23004C8262 /* ListAndDetails */,
 				0886116B2DC925C40082A8AB /* Authentication */,
 				0886116E2DC925C40082A8AB /* Coffees */,
 				088611712DC925C40082A8AB /* Orders */,
@@ -332,6 +335,14 @@
 				088611A22DC9598B0082A8AB /* TokenManager.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		08FCD2362DD25E23004C8262 /* ListAndDetails */ = {
+			isa = PBXGroup;
+			children = (
+				08FCD2372DD25E42004C8262 /* EntityListViewModel.swift */,
+			);
+			path = ListAndDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -505,6 +516,7 @@
 				0886119F2DC925C40082A8AB /* CoffeesListView.swift in Sources */,
 				08FCD22B2DCC1C6B004C8262 /* CoffeeDetailsView.swift in Sources */,
 				08FCD22C2DCC1C6B004C8262 /* CoffeeDetailsViewModel.swift in Sources */,
+				08FCD2382DD25E4C004C8262 /* EntityListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

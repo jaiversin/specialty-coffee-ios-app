@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CoffeesListView: View {
-    @ObservedObject var viewModel: CoffeesListViewModel
+    @ObservedObject var viewModel: EntityListViewModel<Coffee>
 //    @State var coffees: [Coffee] = []
 
     var body: some View {
@@ -44,7 +44,7 @@ struct CoffeesListView: View {
 }
 
 #Preview {
-    var vm = CoffeesListViewModel()
+    var vm = EntityListViewModel<Coffee>()
     vm.result.entries = [
         Coffee(id: "123",
                name: "Test Coffee",
